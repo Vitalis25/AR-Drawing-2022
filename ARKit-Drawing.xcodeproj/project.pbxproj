@@ -10,6 +10,7 @@
 		0D68C1E82876914A00793FCF /* Screenshot01.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0D68C1E52876914A00793FCF /* Screenshot01.PNG */; };
 		0D68C1E92876914A00793FCF /* Screenshot03.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0D68C1E62876914A00793FCF /* Screenshot03.PNG */; };
 		0D68C1EA2876914A00793FCF /* Screenshot02.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0D68C1E72876914A00793FCF /* Screenshot02.PNG */; };
+		0D68C1EC287693CF00793FCF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D68C1EB287693CF00793FCF /* README.md */; };
 		5519DC5720238B6000B1008D /* OptionSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5519DC5620238B6000B1008D /* OptionSelectorViewController.swift */; };
 		BE618F32203E31B8005EC6F1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE618F31203E31B8005EC6F1 /* UIViewController+Extensions.swift */; };
 		BE915EAB20105C1D00A251FD /* OptionsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE915EAA20105C1D00A251FD /* OptionsContainerViewController.swift */; };
@@ -27,6 +28,7 @@
 		0D68C1E52876914A00793FCF /* Screenshot01.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot01.PNG; sourceTree = "<group>"; };
 		0D68C1E62876914A00793FCF /* Screenshot03.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot03.PNG; sourceTree = "<group>"; };
 		0D68C1E72876914A00793FCF /* Screenshot02.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot02.PNG; sourceTree = "<group>"; };
+		0D68C1EB287693CF00793FCF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "ARKit-Drawing/README.md"; sourceTree = SOURCE_ROOT; };
 		5519DC5620238B6000B1008D /* OptionSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionSelectorViewController.swift; sourceTree = "<group>"; };
 		BE618F31203E31B8005EC6F1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		BE915EAA20105C1D00A251FD /* OptionsContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsContainerViewController.swift; sourceTree = "<group>"; };
@@ -82,16 +84,17 @@
 		BEDB2ED8200EABAD001C6BBC /* ARKit-Drawing */ = {
 			isa = PBXGroup;
 			children = (
-				0D68C1E42876913200793FCF /* Screenshots */,
 				BEDB2ED9200EABAD001C6BBC /* AppDelegate.swift */,
-				BEDB2EDD200EABAD001C6BBC /* ViewController.swift */,
-				BEDB2EEF200ECC4C001C6BBC /* BasicShape.swift */,
-				BEDB2EDF200EABAD001C6BBC /* Main.storyboard */,
-				BEDB2EF1200ECF14001C6BBC /* Options */,
-				BEDB2EDB200EABAD001C6BBC /* models.scnassets */,
 				BEDB2EE2200EABAD001C6BBC /* Assets.xcassets */,
-				BEDB2EE4200EABAD001C6BBC /* LaunchScreen.storyboard */,
+				BEDB2EEF200ECC4C001C6BBC /* BasicShape.swift */,
 				BEDB2EE7200EABAD001C6BBC /* Info.plist */,
+				BEDB2EE4200EABAD001C6BBC /* LaunchScreen.storyboard */,
+				BEDB2EDF200EABAD001C6BBC /* Main.storyboard */,
+				BEDB2EDB200EABAD001C6BBC /* models.scnassets */,
+				BEDB2EF1200ECF14001C6BBC /* Options */,
+				0D68C1EB287693CF00793FCF /* README.md */,
+				0D68C1E42876913200793FCF /* Screenshots */,
+				BEDB2EDD200EABAD001C6BBC /* ViewController.swift */,
 			);
 			path = "ARKit-Drawing";
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				0D68C1EA2876914A00793FCF /* Screenshot02.PNG in Resources */,
 				BEDB2EE3200EABAD001C6BBC /* Assets.xcassets in Resources */,
 				0D68C1E92876914A00793FCF /* Screenshot03.PNG in Resources */,
+				0D68C1EC287693CF00793FCF /* README.md in Resources */,
 				0D68C1E82876914A00793FCF /* Screenshot01.PNG in Resources */,
 				BEDB2EE1200EABAD001C6BBC /* Main.storyboard in Resources */,
 			);
