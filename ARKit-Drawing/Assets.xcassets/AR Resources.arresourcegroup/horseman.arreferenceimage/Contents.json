@@ -1,0 +1,16 @@
+{
+  "images" : [
+    {
+      "filename" : "horseman.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "unit" : "centimeters",
+    "width" : 7.7400000000000002
+  }
+}

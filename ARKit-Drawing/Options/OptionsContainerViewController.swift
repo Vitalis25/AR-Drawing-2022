@@ -1,7 +1,7 @@
 import UIKit
 import SceneKit
 
-protocol OptionsViewControllerDelegate: class {
+protocol OptionsViewControllerDelegate: AnyObject {
     func objectSelected(node: SCNNode)
     func undoLastObject()
     func togglePlaneVisualization()
@@ -68,7 +68,7 @@ class OptionsContainerViewController: UIViewController, UINavigationControllerDe
             return fileEnumerator.compactMap { element in
                 let url = element as! URL
                 
-                guard url.pathExtension == "scn" else { return nil }
+                guard url.pathExtension == "scn" || url.pathExtension == "dae" else { return nil }
                 
                 return url.lastPathComponent
             }
@@ -85,7 +85,7 @@ class OptionsContainerViewController: UIViewController, UINavigationControllerDe
     }
     
     private func shapePicker() -> UIViewController {
-        let shapes: [Shape] = [.box, .sphere, .cylinder, .cone, .torus]
+        let shapes: [Shape] = [.box, .sphere, .cylinder, .cone, .pyramid, .torus]
         let options = shapes.map { Option(option: $0) }
         
         let selector = OptionSelectorViewController(options: options)
@@ -97,7 +97,17 @@ class OptionsContainerViewController: UIViewController, UINavigationControllerDe
     }
     
     private func colorPicker() -> UIViewController {
-        let colors: [(String, UIColor)] = [("Red", .red), ("Yellow", .yellow), ("Orange", .orange), ("Green", .green), ("Blue", .blue), ("Brown", .brown), ("White", .white)]
+        let colors: [(String, UIColor)] = [
+            ("Red", .red),
+            ("Yellow", .yellow),
+            ("Orange", .orange),
+            ("Green", .green),
+            ("Blue", .blue),
+            ("Cyan", .cyan),
+            ("Purple", .purple),
+            ("Brown", .brown),
+            ("White", .white),
+        ]
         let options = colors.map { Option(name: $0.0, option: $0.1, showsDisclosureIndicator: true) }
         
         let selector = OptionSelectorViewController(options: options)
@@ -109,7 +119,7 @@ class OptionsContainerViewController: UIViewController, UINavigationControllerDe
     }
     
     private func sizePicker() -> UIViewController {
-        let sizes: [Size] = [.small, .medium, .large]
+        let sizes: [Size] = [.small, .medium, .large, .extraLarge]
         let options = sizes.map { Option(option: $0, showsDisclosureIndicator: false) }
         
         let selector = OptionSelectorViewController(options: options)
@@ -131,6 +141,8 @@ class OptionsContainerViewController: UIViewController, UINavigationControllerDe
             meters = 0.1
         case .large:
             meters = 0.3
+        case .extraLarge:
+            meters = 0.5
         }
         
         switch shape {
@@ -143,7 +155,9 @@ class OptionsContainerViewController: UIViewController, UINavigationControllerDe
         case .sphere:
             geometry = SCNSphere(radius: meters)
         case .torus:
-            geometry = SCNTorus(ringRadius: meters*1.5, pipeRadius: meters * 0.2)
+            geometry = SCNTorus(ringRadius: 1.5 * meters, pipeRadius: 0.2 * meters)
+        case .pyramid:
+            geometry = SCNPyramid(width: meters, height: meters, length: 1.5 * meters)
         }
         
         geometry.firstMaterial?.diffuse.contents = color
