@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D68C1E82876914A00793FCF /* Screenshot01.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0D68C1E52876914A00793FCF /* Screenshot01.PNG */; };
+		0D68C1E92876914A00793FCF /* Screenshot03.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0D68C1E62876914A00793FCF /* Screenshot03.PNG */; };
+		0D68C1EA2876914A00793FCF /* Screenshot02.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0D68C1E72876914A00793FCF /* Screenshot02.PNG */; };
 		5519DC5720238B6000B1008D /* OptionSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5519DC5620238B6000B1008D /* OptionSelectorViewController.swift */; };
 		BE618F32203E31B8005EC6F1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE618F31203E31B8005EC6F1 /* UIViewController+Extensions.swift */; };
 		BE915EAB20105C1D00A251FD /* OptionsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE915EAA20105C1D00A251FD /* OptionsContainerViewController.swift */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D68C1E52876914A00793FCF /* Screenshot01.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot01.PNG; sourceTree = "<group>"; };
+		0D68C1E62876914A00793FCF /* Screenshot03.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot03.PNG; sourceTree = "<group>"; };
+		0D68C1E72876914A00793FCF /* Screenshot02.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot02.PNG; sourceTree = "<group>"; };
 		5519DC5620238B6000B1008D /* OptionSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionSelectorViewController.swift; sourceTree = "<group>"; };
 		BE618F31203E31B8005EC6F1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		BE915EAA20105C1D00A251FD /* OptionsContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsContainerViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D68C1E42876913200793FCF /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				0D68C1E52876914A00793FCF /* Screenshot01.PNG */,
+				0D68C1E72876914A00793FCF /* Screenshot02.PNG */,
+				0D68C1E62876914A00793FCF /* Screenshot03.PNG */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		BEDB2ECD200EABAD001C6BBC = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +82,7 @@
 		BEDB2ED8200EABAD001C6BBC /* ARKit-Drawing */ = {
 			isa = PBXGroup;
 			children = (
+				0D68C1E42876913200793FCF /* Screenshots */,
 				BEDB2ED9200EABAD001C6BBC /* AppDelegate.swift */,
 				BEDB2EDD200EABAD001C6BBC /* ViewController.swift */,
 				BEDB2EEF200ECC4C001C6BBC /* BasicShape.swift */,
@@ -153,7 +170,10 @@
 				BEDB2EDC200EABAD001C6BBC /* models.scnassets in Resources */,
 				BEDB2EEE200ECB94001C6BBC /* Options.storyboard in Resources */,
 				BEDB2EE6200EABAD001C6BBC /* LaunchScreen.storyboard in Resources */,
+				0D68C1EA2876914A00793FCF /* Screenshot02.PNG in Resources */,
 				BEDB2EE3200EABAD001C6BBC /* Assets.xcassets in Resources */,
+				0D68C1E92876914A00793FCF /* Screenshot03.PNG in Resources */,
+				0D68C1E82876914A00793FCF /* Screenshot01.PNG in Resources */,
 				BEDB2EE1200EABAD001C6BBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
